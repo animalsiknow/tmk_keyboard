@@ -9,7 +9,7 @@
 
 // L2 has the arrows:
 
-//  insert home    ↑    end  pgup     ||       ↑     F7    F8    F9   F10
+//  sleep  home    ↑    end  pgup     ||       ↑     F7    F8    F9   F10
 //    del   ←     ↓     →  pgdn     ||       ↓     F4    F5    F6   F11
 //                                    ||             F1    F2    F3   F12
 //  reset       super shift bksp ctrl || alt space   L0             reset
@@ -31,11 +31,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     SHIFT(KC_BSLS), KC_GRAVE, KC_LGUI, KC_LSFT, KC_BSPC, KC_LCTL, KC_LALT,    \
     KC_SPC, KC_FN0, KC_FN1, KC_0, KC_EQUAL),
   KEYMAP(
-    KC_INS, KC_HOME, KC_UP, KC_END, KC_PGUP,                                  \
+    SHIFT(CTRL(KC_POWER)), KC_HOME, KC_UP, KC_END, KC_PGUP,                   \
     KC_UP, KC_F7, KC_F8, KC_F9, KC_F10,                                       \
     KC_DEL, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDN,                              \
     KC_DOWN, KC_F4, KC_F5, KC_F6, KC_F11,                                     \
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                            \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        \
     KC_NO, KC_F1, KC_F2, KC_F3, KC_F12,                                       \
     KC_FN2, KC__VOLDOWN, KC_LGUI, KC_LSFT, KC_BSPC, KC_LCTL,                  \
     KC_LALT, KC_SPC, KC_FN0, KC_FN1, KC_0, KC_PAUSE)
